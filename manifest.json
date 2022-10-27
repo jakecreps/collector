@@ -1,0 +1,30 @@
+{
+
+    "manifest_version": 3,
+    "name": "The Collector",
+    "version": "1.0",
+     "options_page": "dashboard/options.html",
+
+    "description": "",
+
+    "icons": {
+        "48": "icons/icon.png"
+    },
+
+    "permissions": [
+        "storage",
+        "unlimitedStorage"
+    ],
+
+    "action": {
+        "default_title": "Data parser",
+        "default_icon": "icons/icon.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://t.me/*", "https://pastehub.net/*","https://mega.nz/file/*", "https://telegra.ph/*"],
+            "js": ["jquery.min.js", "main.js"]
+        }
+    ]
+}

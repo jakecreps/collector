@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body class="all_data_list">
+		<div class="filter_search_wrap">
+			<h1>Collected Data <span id="count"></span></h1>
+			<input type="text" id="Search" name="Search" placeholder="Search">
+			<button type="button" id="export">Export</button>
+			<button type="button" id="clear_data">Delete</button>
+		</div>
+			<div id="wrapper">
+			<table id="items">
+				<thead>
+						<tr>
+					    <th width="20%">Email</th>
+					    <th width="20%">Password</th>
+					    <th width="40%">URL</th>
+					    <th>Date</th>
+					</tr>
+				</thead>
+					<tbody id="table_body"></tbody>
+			</table>
+		</div>
+		<script src="../jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
